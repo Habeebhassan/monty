@@ -1,4 +1,4 @@
-fndef MONTY_H
+#ifndef MONTY_H
 #define MONTY_H
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,10 +8,10 @@ fndef MONTY_H
 #include <string.h>
 #include <ctype.h>
 /**
- * struct stack_s - doubly linked list representation of a stack (or queue)
+ * struct stack_s - doubly linked list representation of a stack or queue
  * @n: integer
- * @prev: points to the previous element of the stack (or queue)
- * @next: points to the next element of the stack (or queue)
+ * @prev: points to the previous element of the stack or queue
+ * @next: points to the next element of the stack or queue
  *
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO Holberton project
@@ -60,4 +60,18 @@ void f_mod(stack_t **head, unsigned int counter);
 void f_mul(stack_t **head, unsigned int counter);
 void f_nop(stack_t **head, unsigned int counter);
 void f_pall(stack_t **head, unsigned int number);
+void m_mchar(stack_t **head, unsigned int counter);
+void m_prinstr(stack_t **head, unsigned int counter);
+void m_rotst(stack_t **head, unsigned int counter);
+void m_rotstb(stack_t **head, __attribute__((unused)) unsigned int counter);
+void m_subtract(stack_t **head, unsigned int counter);
+void addqueue(stack_t **head, int n);
+void m_queue(stack_t **head, unsigned int counter);
+void m_stack(stack_t **head, unsigned int counter);
+void m_push(stack_t **head, unsigned int number);
+void m_replace(stack_t **head, unsigned int counter);
+void m_printop(stack_t **head, unsigned int number);
+char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
+ssize_t getstdin(char **lineptr, int file);
+char  *clean_line(char *content);
 #endif
