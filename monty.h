@@ -74,4 +74,5 @@ void m_printop(stack_t **head, unsigned int number);
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 ssize_t getstdin(char **lineptr, int file);
 char  *clean_line(char *content);
+int is_number(char *str);
 #endif
