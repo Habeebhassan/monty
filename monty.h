@@ -51,9 +51,9 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-void f_add(stack_t **head, unsigned int counter);
-void addnode(stack_t **head, int n);
-void f_div(stack_t **head, unsigned int counter);
+void f_sum(stack_t **head, unsigned int counter);
+void add_to_node(stack_t **head, int n);
+void quotient(stack_t **head, unsigned int counter);
 int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
 void free_stack(stack_t *head);
 void f_mod(stack_t **head, unsigned int counter);
