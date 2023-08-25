@@ -8,7 +8,7 @@
 #include <string.h>
 #include <ctype.h>
 /**
- * struct stack_s - doubly linked list representation of a stack or queue
+ * struct stack_s - doubly linke representation of stack or queue
  * @n: integer
  * @prev: points to the previous element of the stack or queue
  * @next: points to the next element of the stack or queue
@@ -75,4 +75,5 @@ char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 ssize_t getstdin(char **lineptr, int file);
 char  *clean_line(char *content);
 int is_number(char *str);
+void m_pop(stack_t **head, unsigned int counter);
 #endif
