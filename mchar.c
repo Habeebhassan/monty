@@ -13,7 +13,7 @@ void m_mchar(stack_t **head, unsigned int counter)
 	top = *head;
 	if (!top)
 	{
-		fprintf(stderr, "L%d: can't print character, stack empty\n", counter);
+		fprintf(stderr, "L%d: can't pchar, stack empty\n", counter);
 		fclose(bus.file);
 		free(bus.content);
 		free_stack(*head);
@@ -21,7 +21,7 @@ void m_mchar(stack_t **head, unsigned int counter)
 	}
 	if (top->n > 127 || top->n < 0)
 	{
-		fprintf(stderr, "L%d: can't print char, value out of range\n", counter);
+		fprintf(stderr, "L%d: can't pchar, value out of range\n", counter);
 		fclose(bus.file);
 		free(bus.content);
 		free_stack(*head);
